@@ -1,4 +1,5 @@
 package com.rnbundledemo;
+
 import android.app.Activity;
 import android.content.Intent;
 
@@ -11,7 +12,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
 
-public class AppNativeModule extends ReactContextBaseJavaModule{
+public class AppNativeModule extends ReactContextBaseJavaModule {
 
     public AppNativeModule(@Nullable ReactApplicationContext reactContext) {
         super(reactContext);
@@ -26,26 +27,26 @@ public class AppNativeModule extends ReactContextBaseJavaModule{
     }
 
     @ReactMethod
-    public void startActivityFromJS(String name, String params){
-        try{
+    public void startActivityFromJS(String name, String params) {
+        try {
             Activity currentActivity = getCurrentActivity();
-            if(null!=currentActivity){
+            if (null != currentActivity) {
                 Class toActivity = Class.forName(name);
-                Intent intent = new Intent(currentActivity,toActivity);
+                Intent intent = new Intent(currentActivity, toActivity);
                 intent.putExtra("params", params);
                 currentActivity.startActivity(intent);
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             throw new JSApplicationIllegalArgumentException(
-                    "不能打开Activity : "+e.getMessage());
+                    "不能打开Activity : " + e.getMessage());
         }
     }
 
     @ReactMethod
     public void openLocalBundlePage() {
         Activity currentActivity = getCurrentActivity();
-        if(null!=currentActivity){
-            Intent intent = new Intent(currentActivity,LocalBundleActivity.class);
+        if (null != currentActivity) {
+            Intent intent = new Intent(currentActivity, LocalBundleActivity.class);
             //intent.putExtra("params", params);
             currentActivity.startActivity(intent);
         }
@@ -55,8 +56,8 @@ public class AppNativeModule extends ReactContextBaseJavaModule{
     @ReactMethod
     public void openRemoteBundlePage() {
         Activity currentActivity = getCurrentActivity();
-        if(null!=currentActivity){
-            Intent intent = new Intent(currentActivity,RemoteBundleActivity.class);
+        if (null != currentActivity) {
+            Intent intent = new Intent(currentActivity, RemoteBundleActivity.class);
             //intent.putExtra("params", params);
             currentActivity.startActivity(intent);
         }

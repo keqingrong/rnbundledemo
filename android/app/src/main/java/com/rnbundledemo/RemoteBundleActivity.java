@@ -13,7 +13,7 @@ public class RemoteBundleActivity extends AsyncReactActivity {
     }
 
     @Override
-    protected RnBundle getBundle(){
+    protected RnBundle getBundle() {
         RnBundle bundle = new RnBundle();
         bundle.scriptType = ScriptType.NETWORK;
         bundle.scriptPath = "index2.android.bundle";

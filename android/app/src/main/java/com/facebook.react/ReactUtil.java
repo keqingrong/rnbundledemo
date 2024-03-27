@@ -1,7 +1,6 @@
 package com.facebook.react;
 
 
-
 import androidx.annotation.Nullable;
 
 import com.facebook.react.bridge.CatalystInstance;

@@ -48,28 +48,28 @@ FileUtils {
         return new File(basePath, appendPathComponent).getAbsolutePath();
     }
 
-    public static void downloadRNBundle(final Context context,final String url,final String md5,final UpdateProgressListener listener){
-        final String downloadPath = context.getFilesDir()+ File.separator+BUNDLE_DOWNLOADPATH;
+    public static void downloadRNBundle(final Context context, final String url, final String md5, final UpdateProgressListener listener) {
+        final String downloadPath = context.getFilesDir() + File.separator + BUNDLE_DOWNLOADPATH;
         final String fileName = RN_NAME;
         new Thread(new Runnable() {
             @Override
             public void run() {
                 boolean result = true;
                 try {
-                    boolean tmpRet = FileUtils.downloadFile(url, downloadPath, fileName,listener);
-                    if(!tmpRet){
+                    boolean tmpRet = FileUtils.downloadFile(url, downloadPath, fileName, listener);
+                    if (!tmpRet) {
                         result = false;
-                    }else {
-                        String filePath = downloadPath+ File.separator+fileName;
+                    } else {
+                        String filePath = downloadPath + File.separator + fileName;
                         String successStr = FileUtils.processRnPackage(context, md5, filePath);
                         if (!"success".equals(successStr)) {
                             result = false;
                         }
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
                     result = false;
-                }finally {
-                    if(listener!=null){
+                } finally {
+                    if (listener != null) {
                         listener.complete(result);
                     }
                 }
@@ -79,12 +79,13 @@ FileUtils {
 
     /**
      * 下载后的解压操作，这里是没有md5校验的，md5只作为一个目录来使用，实际中请自行添加md5校验
+     *
      * @param context
-     * @param md5 下载的文件的md5，这个可由服务端提供，这里的demo由于没服务端因此只当中目录
-     * @param path 下载完的bundle的路径
+     * @param md5     下载的文件的md5，这个可由服务端提供，这里的demo由于没服务端因此只当中目录
+     * @param path    下载完的bundle的路径
      * @return
      */
-    public static String processRnPackage(Context context,String md5,String path){
+    public static String processRnPackage(Context context, String md5, String path) {
         String ret = "failed";
         try {
             File downloadFile = new File(path);
@@ -104,17 +105,17 @@ FileUtils {
             FileUtils.copyDirectoryContents(unzippedFolderPath, newUpdateFolderPath);
             FileUtils.deleteFileAtPathSilently(unzippedFolderPath);
             String relativeBundlePath = newUpdateFolderPath;
-            FileUtils.writeStringToFile(md5, appendPathComponent(getRNCodePath(context),STATUS_FILE));//用该文件判断当前最新版本
+            FileUtils.writeStringToFile(md5, appendPathComponent(getRNCodePath(context), STATUS_FILE));//用该文件判断当前最新版本
             FileUtils.writeStringToFile(md5, newUpdateMetadataPath);
             ret = "success";
-        }catch (Exception e){
-            Log.e(TAG,"react native 解压bundle失败");
+        } catch (Exception e) {
+            Log.e(TAG, "react native 解压bundle失败");
             e.printStackTrace();
         }
         return ret;
     }
 
-    public static boolean downloadFile(String url,String fileForder,String fileName,UpdateProgressListener listener) throws IOException{
+    public static boolean downloadFile(String url, String fileForder, String fileName, UpdateProgressListener listener) throws IOException {
         String downloadUrlString = url;
         HttpURLConnection connection = null;
         BufferedInputStream bin = null;
@@ -155,7 +156,7 @@ FileUtils {
 
                 receivedBytes += numBytesRead;
                 bout.write(data, 0, numBytesRead);
-                listener.updateProgressChange((int)(receivedBytes*100/totalBytes));
+                listener.updateProgressChange((int) (receivedBytes * 100 / totalBytes));
             }
 
             if (totalBytes != receivedBytes) {
@@ -218,7 +219,7 @@ FileUtils {
 
     public static void deleteDirectoryAtPath(String directoryPath) {
         if (directoryPath == null) {
-            Log.e(TAG,"deleteDirectoryAtPath attempted with null directoryPath");
+            Log.e(TAG, "deleteDirectoryAtPath attempted with null directoryPath");
             return;
         }
         File file = new File(directoryPath);
@@ -244,7 +245,7 @@ FileUtils {
         }
 
         if (!file.delete()) {
-            Log.e(TAG,"Error deleting file " + file.getName());
+            Log.e(TAG, "Error deleting file " + file.getName());
         }
     }
 
@@ -253,7 +254,7 @@ FileUtils {
         return codePath;
     }
 
-    public static String getPackageFolderPath(Context context,String packageHash) {
+    public static String getPackageFolderPath(Context context, String packageHash) {
         return appendPathComponent(getRNCodePath(context), packageHash);
     }
 
@@ -262,7 +263,7 @@ FileUtils {
         String content = null;
         try {
             content = readFileToString(statusFilePath);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -278,7 +279,7 @@ FileUtils {
         return new File(filePath).exists();
     }
 
-    public static void moveFile(File fileToMove, String newFolderPath, String newFileName) throws IOException{
+    public static void moveFile(File fileToMove, String newFolderPath, String newFileName) throws IOException {
         File newFolder = new File(newFolderPath);
         if (!newFolder.exists()) {
             newFolder.mkdirs();
@@ -377,24 +378,23 @@ FileUtils {
     }
 
     /**
-     *
      * @param context
      * @param assetFilePath
      * @param destPath
      */
-    public static boolean copyAssetFile(Context context,String assetFilePath, String destPath,boolean overWrite){
+    public static boolean copyAssetFile(Context context, String assetFilePath, String destPath, boolean overWrite) {
         AssetManager assetManager = context.getAssets();
         File fileDir = context.getFilesDir();
-        String absoluteDestPath = fileDir.getAbsolutePath()+File.separator+destPath;
+        String absoluteDestPath = fileDir.getAbsolutePath() + File.separator + destPath;
         try {
-            ArrayList<String>  files = getAssetsFilePath(context,assetFilePath,null);
-            for(int i=0;i<files.size();i++){
-                Log.i(TAG,files.get(i));
+            ArrayList<String> files = getAssetsFilePath(context, assetFilePath, null);
+            for (int i = 0; i < files.size(); i++) {
+                Log.i(TAG, files.get(i));
                 String path = files.get(i);
                 File desFile = new File(absoluteDestPath + File.separator + path);
                 if (desFile == null) return false;
-                if(!overWrite){
-                    if(desFile.exists()){
+                if (!overWrite) {
+                    if (desFile.exists()) {
                         continue;
                     }
                 }
@@ -407,7 +407,7 @@ FileUtils {
                 }
             }
 
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
             return false;
         }
@@ -415,22 +415,21 @@ FileUtils {
     }
 
 
-
-    private static ArrayList<String> getAssetsFilePath(Context context, String oriPath, ArrayList<String> paths) throws IOException{
+    private static ArrayList<String> getAssetsFilePath(Context context, String oriPath, ArrayList<String> paths) throws IOException {
 
         if (paths == null) paths = new ArrayList<>();
 
-            String[] list = context.getAssets().list(oriPath);
-            for (String l : list) {
-                int length = context.getAssets().list(l).length;
-                String desPath = oriPath.equals("") ? l : oriPath + "/" + l;
-                if (length == 0) {
-                    paths.add(desPath);
-                } else {
-                    getAssetsFilePath(context, desPath, paths);
-                }
+        String[] list = context.getAssets().list(oriPath);
+        for (String l : list) {
+            int length = context.getAssets().list(l).length;
+            String desPath = oriPath.equals("") ? l : oriPath + "/" + l;
+            if (length == 0) {
+                paths.add(desPath);
+            } else {
+                getAssetsFilePath(context, desPath, paths);
             }
-            return paths;
+        }
+        return paths;
 
     }
 
@@ -455,7 +454,6 @@ FileUtils {
             closeIO(is, os);
         }
     }
-
 
 
     private static boolean createOrExistsFile(File file) {

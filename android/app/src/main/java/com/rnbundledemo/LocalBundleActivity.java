@@ -14,7 +14,7 @@ public class LocalBundleActivity extends AsyncReactActivity {
     }
 
     @Override
-    protected RnBundle getBundle(){
+    protected RnBundle getBundle() {
         RnBundle bundle = new RnBundle();
         bundle.scriptType = ScriptType.ASSET;
         bundle.scriptPath = "index.android.bundle";

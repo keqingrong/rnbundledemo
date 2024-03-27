@@ -15,7 +15,7 @@ public class RnCustomerPackage implements ReactPackage {
     @NonNull
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-        List<NativeModule> modules=new ArrayList<NativeModule>();
+        List<NativeModule> modules = new ArrayList<NativeModule>();
         modules.add(new AppNativeModule(reactContext));
         return modules;
     }
@@ -23,7 +23,7 @@ public class RnCustomerPackage implements ReactPackage {
     @NonNull
     @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-        List<ViewManager> viewManagers=new ArrayList<ViewManager>();
+        List<ViewManager> viewManagers = new ArrayList<ViewManager>();
         return viewManagers;
     }
 }

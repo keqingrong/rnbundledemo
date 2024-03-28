@@ -156,7 +156,7 @@ public abstract class AsyncReactActivity extends androidx.fragment.app.FragmentA
             dialogBuilder.setTitle("Loading jsBundle");
             dialogBuilder.setCancelable(false);
             final TextView tvv = new TextView(this);
-            tvv.setText("conneting");//由于demo中把文件放在了github上，所以http建立连接要花好几秒时间
+            tvv.setText("connecting");//由于demo中把文件放在了github上，所以http建立连接要花好几秒时间
             tvv.setTextColor(Color.BLACK);
             tvv.setGravity(Gravity.CENTER);
             tvv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));

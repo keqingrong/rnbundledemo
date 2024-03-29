@@ -17,8 +17,8 @@ public class LocalBundleActivity extends AsyncReactActivity {
     protected RnBundle getBundle() {
         RnBundle bundle = new RnBundle();
         bundle.scriptType = ScriptType.ASSET;
-        bundle.scriptPath = "index.android.bundle";
-        bundle.scriptUrl = "index.android.bundle";
+        bundle.scriptPath = "index1.android.bundle";
+        bundle.scriptUrl = "index1.android.bundle";
         return bundle;
     }
 

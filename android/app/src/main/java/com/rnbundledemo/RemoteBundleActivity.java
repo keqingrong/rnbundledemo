@@ -1,7 +1,6 @@
 package com.rnbundledemo;
 
 import com.facebook.react.AsyncReactActivity;
-
 public class RemoteBundleActivity extends AsyncReactActivity {
     /**
      * Returns the name of the main component registered from JavaScript.
@@ -17,7 +16,7 @@ public class RemoteBundleActivity extends AsyncReactActivity {
         RnBundle bundle = new RnBundle();
         bundle.scriptType = ScriptType.NETWORK;
         bundle.scriptPath = "index2.android.bundle";
-        bundle.scriptUrl = "https://github.com/smallnew/react-native-multibundler/raw/master/remotebundles/index2.android.bundle.zip";
+        bundle.scriptUrl = "https://20240321.oss-cn-nanjing.aliyuncs.com/android/RNBundleDemo/index2.android.bundle.zip";
         return bundle;
     }
 

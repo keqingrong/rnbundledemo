@@ -24,6 +24,22 @@ async function main() {
       assetsDest: './android/app/src/main/res/',
       config: './buz.config.js',
     },
+    {
+      entryFile: 'index1.js',
+      platform: 'android',
+      dev: false,
+      bundleOutput: './android/app/src/main/assets/index1.android.bundle',
+      assetsDest: './android/app/src/main/res/',
+      config: './buz.config.js',
+    },
+    {
+      entryFile: 'index2.js',
+      platform: 'android',
+      dev: false,
+      bundleOutput: './android/app/src/main/assets/index2.android.bundle',
+      assetsDest: './android/app/src/main/res/',
+      config: './buz.config.js',
+    },
   ];
 
   const basePath = __dirname;

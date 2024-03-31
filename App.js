@@ -87,6 +87,7 @@ const App: () => Node = () => {
         </View>
         <View
           style={{
+            marginTop: 40,
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Text onPress={loadRemoteBundle}>加载远程Bundle包</Text>

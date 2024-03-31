@@ -9,6 +9,13 @@ async function main() {
   /** @type {Array<import('@keqingrong/react-native-cli-apis').BundleConfig>} */
   const configs = [
     {
+      entryFile: 'index.js',
+      platform: 'android',
+      dev: false,
+      bundleOutput: './android/app/src/main/assets/index.android.bundle',
+      assetsDest: './android/app/src/main/res/',
+    },
+    {
       entryFile: 'index1.js',
       platform: 'android',
       dev: false,
@@ -34,10 +41,20 @@ async function main() {
   await version();
 
   for await (let config of configs) {
-    info('Building bundle for Android\n');
-    await bundle(config, spawnOptions);
-    info('Done building bundle for Android');
-    break;
+    switch (config.platform) {
+      case 'android': {
+        info('Building bundle for Android\n');
+        await bundle(config, spawnOptions);
+        info('Done building bundle for Android');
+        break;
+      }
+      case 'ios': {
+        info('Building bundle for iOS\n');
+        await bundle(config, spawnOptions);
+        info('Done building bundle for iOS');
+        break;
+      }
+    }
   }
 
   info('All done');

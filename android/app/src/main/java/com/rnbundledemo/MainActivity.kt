@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
       LoadReactActivity
               .build(this@MainActivity)
               .page(Page()
-                      .name("app")
-                      .url("rn://app/index.android.jsbundle")
+                      .name("RNBundleDemo")
+                      .url("rn://RNBundleDemo/index.android.bundle")
                       .extras("param1", "this is a test...")
               )
               .start()

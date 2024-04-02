@@ -71,7 +71,7 @@ class MainApplication : Application(), ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-                    val aClass = Class.forName("com.app.ReactNativeFlipper")
+                    val aClass = Class.forName("com.rnbundledemo.ReactNativeFlipper")
                     aClass
                             .getMethod("initializeFlipper", Context::class.java, ReactInstanceManager::class.java)
                             .invoke(null, context, reactInstanceManager)

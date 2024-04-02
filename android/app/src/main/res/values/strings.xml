@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">RNBundleDemo</string>
+    <string name="app_name">app</string>
+    <string name="mask_hub">跳转React Native BundleJS</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.app
+package com.rnbundledemo
 
 import android.os.Bundle
 import android.view.View

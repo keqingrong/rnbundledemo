@@ -1,4 +1,4 @@
-package com.app;
+package com.rnbundledemo;
 
 import static com.maskhub.Constants.FAILURE;
 import static com.maskhub.Constants.SUCCESS;
@@ -31,17 +31,20 @@ public class MiniAppVersionCheckDelegate implements VersionCheckerDelegate {
 
     private final Context mContext;
 
+    private String mURL;
     private final OkHttpClient client = new OkHttpClient();
     private final Gson gson = new Gson();
 
-    public MiniAppVersionCheckDelegate(Context context) {
+    public MiniAppVersionCheckDelegate(Context context,String url) {
         this.mContext = context;
+        this.mURL = url;
     }
 
     @Override
     public void processCheckResult(Map<String, Object> params, Callback callback) {
         Request request = new Request.Builder()
-                .url("https://tuicr.oss-cn-hangzhou.aliyuncs.com/jsbundle/demo/data_0.73.6.json")
+//                .url("https://tuicr.oss-cn-hangzhou.aliyuncs.com/jsbundle/demo/data_0.73.6.json")
+                .url(this.mURL)
                 .build();
 
         client.newCall(request).enqueue(new okhttp3.Callback() {

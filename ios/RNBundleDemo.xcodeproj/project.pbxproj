@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNBundleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNBundleDemoTests.m */; };
+		07C05CEB2BBCFB3B00A8251B /* FileDownloadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CDE2BBCFB3B00A8251B /* FileDownloadHandler.m */; };
+		07C05CEC2BBCFB3B00A8251B /* LoadReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE12BBCFB3B00A8251B /* LoadReactViewController.m */; };
+		07C05CED2BBCFB3B00A8251B /* FileSessionDownloadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE22BBCFB3B00A8251B /* FileSessionDownloadHandler.m */; };
+		07C05CEE2BBCFB3B00A8251B /* Disget.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE42BBCFB3B00A8251B /* Disget.m */; };
+		07C05CEF2BBCFB3B00A8251B /* MaskHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE62BBCFB3B00A8251B /* MaskHub.m */; };
+		07C05CF02BBCFB3B00A8251B /* MaskHubErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE82BBCFB3B00A8251B /* MaskHubErrorUtils.m */; };
+		07C05CF12BBCFB3B00A8251B /* ReactBridgeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C05CE92BBCFB3B00A8251B /* ReactBridgeUtils.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		77F2253EC1710BC0AE1654F5 /* libPods-RNBundleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A9A4C3A22B9BB31C04844F /* libPods-RNBundleDemo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D3C4C33A7C5E423E3245C6A9 /* libPods-RNBundleDemo-RNBundleDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C5EB190DC695B7BDEB016 /* libPods-RNBundleDemo-RNBundleDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +37,33 @@
 		00E356EE1AD99517003FC87E /* RNBundleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNBundleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNBundleDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBundleDemoTests.m; sourceTree = "<group>"; };
+		03A9A4C3A22B9BB31C04844F /* libPods-RNBundleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBundleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C05CDD2BBCFB3B00A8251B /* Disget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disget.h; sourceTree = "<group>"; };
+		07C05CDE2BBCFB3B00A8251B /* FileDownloadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadHandler.m; sourceTree = "<group>"; };
+		07C05CDF2BBCFB3B00A8251B /* ReactBridgeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactBridgeUtils.h; sourceTree = "<group>"; };
+		07C05CE02BBCFB3B00A8251B /* MaskHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskHub.h; sourceTree = "<group>"; };
+		07C05CE12BBCFB3B00A8251B /* LoadReactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadReactViewController.m; sourceTree = "<group>"; };
+		07C05CE22BBCFB3B00A8251B /* FileSessionDownloadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSessionDownloadHandler.m; sourceTree = "<group>"; };
+		07C05CE32BBCFB3B00A8251B /* FileSessionDownloadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSessionDownloadHandler.h; sourceTree = "<group>"; };
+		07C05CE42BBCFB3B00A8251B /* Disget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disget.m; sourceTree = "<group>"; };
+		07C05CE52BBCFB3B00A8251B /* LoadReactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadReactViewController.h; sourceTree = "<group>"; };
+		07C05CE62BBCFB3B00A8251B /* MaskHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskHub.m; sourceTree = "<group>"; };
+		07C05CE72BBCFB3B00A8251B /* FileDownloadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadHandler.h; sourceTree = "<group>"; };
+		07C05CE82BBCFB3B00A8251B /* MaskHubErrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskHubErrorUtils.m; sourceTree = "<group>"; };
+		07C05CE92BBCFB3B00A8251B /* ReactBridgeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactBridgeUtils.m; sourceTree = "<group>"; };
+		07C05CEA2BBCFB3B00A8251B /* MaskHubErrorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskHubErrorUtils.h; sourceTree = "<group>"; };
+		0B8113A776C5289637E3D134 /* Pods-RNBundleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBundleDemo.release.xcconfig"; path = "Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RNBundleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNBundleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNBundleDemo/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RNBundleDemo/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNBundleDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNBundleDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNBundleDemo/main.m; sourceTree = "<group>"; };
+		3102C67D9FC0A6EA517DC486 /* Pods-RNBundleDemo-RNBundleDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBundleDemo-RNBundleDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		639C5EB190DC695B7BDEB016 /* libPods-RNBundleDemo-RNBundleDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBundleDemo-RNBundleDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3669D406F9D0D51E597627 /* Pods-RNBundleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBundleDemo.debug.xcconfig"; path = "Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNBundleDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EADF161A2322B58A159D89F4 /* Pods-RNBundleDemo-RNBundleDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBundleDemo-RNBundleDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C4C33A7C5E423E3245C6A9 /* libPods-RNBundleDemo-RNBundleDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F2253EC1710BC0AE1654F5 /* libPods-RNBundleDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +104,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07C05CDC2BBCFB0400A8251B /* mask_hub */ = {
+			isa = PBXGroup;
+			children = (
+				07C05CDD2BBCFB3B00A8251B /* Disget.h */,
+				07C05CE42BBCFB3B00A8251B /* Disget.m */,
+				07C05CE72BBCFB3B00A8251B /* FileDownloadHandler.h */,
+				07C05CDE2BBCFB3B00A8251B /* FileDownloadHandler.m */,
+				07C05CE32BBCFB3B00A8251B /* FileSessionDownloadHandler.h */,
+				07C05CE22BBCFB3B00A8251B /* FileSessionDownloadHandler.m */,
+				07C05CE52BBCFB3B00A8251B /* LoadReactViewController.h */,
+				07C05CE12BBCFB3B00A8251B /* LoadReactViewController.m */,
+				07C05CE02BBCFB3B00A8251B /* MaskHub.h */,
+				07C05CE62BBCFB3B00A8251B /* MaskHub.m */,
+				07C05CEA2BBCFB3B00A8251B /* MaskHubErrorUtils.h */,
+				07C05CE82BBCFB3B00A8251B /* MaskHubErrorUtils.m */,
+				07C05CDF2BBCFB3B00A8251B /* ReactBridgeUtils.h */,
+				07C05CE92BBCFB3B00A8251B /* ReactBridgeUtils.m */,
+			);
+			path = mask_hub;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* RNBundleDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				03A9A4C3A22B9BB31C04844F /* libPods-RNBundleDemo.a */,
+				639C5EB190DC695B7BDEB016 /* libPods-RNBundleDemo-RNBundleDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,11 +158,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				07C05CDC2BBCFB0400A8251B /* mask_hub */,
 				13B07FAE1A68108700A75B9A /* RNBundleDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNBundleDemoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				FFA5B2ED5D9706D3DD519B60 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -124,6 +180,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FFA5B2ED5D9706D3DD519B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A3669D406F9D0D51E597627 /* Pods-RNBundleDemo.debug.xcconfig */,
+				0B8113A776C5289637E3D134 /* Pods-RNBundleDemo.release.xcconfig */,
+				3102C67D9FC0A6EA517DC486 /* Pods-RNBundleDemo-RNBundleDemoTests.debug.xcconfig */,
+				EADF161A2322B58A159D89F4 /* Pods-RNBundleDemo-RNBundleDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNBundleDemoTests" */;
 			buildPhases = (
+				A56C716CE24C4D08C874A0B1 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				F5C87729B2DC0AAC8E8CF87C /* [CP] Embed Pods Frameworks */,
+				99F4C9CF453396ACFE153D50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,11 +219,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNBundleDemo" */;
 			buildPhases = (
+				4C81C64A43FA43BC7BE30C78 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C4326E4284B00879B8A885A4 /* [CP] Embed Pods Frameworks */,
+				B0E3762A6C1CFA839E157DE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +307,118 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		4C81C64A43FA43BC7BE30C78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNBundleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F4C9CF453396ACFE153D50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A56C716CE24C4D08C874A0B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNBundleDemo-RNBundleDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E3762A6C1CFA839E157DE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4326E4284B00879B8A885A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo/Pods-RNBundleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C87729B2DC0AAC8E8CF87C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBundleDemo-RNBundleDemoTests/Pods-RNBundleDemo-RNBundleDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,7 +454,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				07C05CEB2BBCFB3B00A8251B /* FileDownloadHandler.m in Sources */,
+				07C05CEF2BBCFB3B00A8251B /* MaskHub.m in Sources */,
+				07C05CEC2BBCFB3B00A8251B /* LoadReactViewController.m in Sources */,
+				07C05CF02BBCFB3B00A8251B /* MaskHubErrorUtils.m in Sources */,
+				07C05CF12BBCFB3B00A8251B /* ReactBridgeUtils.m in Sources */,
+				07C05CED2BBCFB3B00A8251B /* FileSessionDownloadHandler.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				07C05CEE2BBCFB3B00A8251B /* Disget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +478,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3102C67D9FC0A6EA517DC486 /* Pods-RNBundleDemo-RNBundleDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -312,6 +505,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADF161A2322B58A159D89F4 /* Pods-RNBundleDemo-RNBundleDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -335,6 +529,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3669D406F9D0D51E597627 /* Pods-RNBundleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -360,6 +555,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8113A776C5289637E3D134 /* Pods-RNBundleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -414,6 +610,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -478,6 +675,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
